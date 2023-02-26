@@ -1,0 +1,27 @@
+name: install_and_test
+on: push
+jobs:
+  Ubuntu:
+    name: Ubuntu Tests
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Install
+        run: python3
+      - name: Run Tests
+        run: python3
+  macOS:
+    name: macOS Tests
+    runs-on: macos-latest
+    steps:
+      - name: Install dependencies
+        run: python3
+      - name: Run tests
+        run: python3
+  Windows:
+    name: Windows Tests
+    runs-on: windows-latest
+    steps:
+      - name: Install dependencies
+        run: python
+      - name: Run tests
+        run: python
