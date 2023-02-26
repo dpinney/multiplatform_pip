@@ -1,3 +1,2 @@
-from .lib import numpy
-
+from lib import numpy
 

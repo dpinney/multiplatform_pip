@@ -3,10 +3,10 @@ import platform
 my_plat = platform.system()
 
 if my_plat == 'Linux':
-    pass
+    from numpy_linux import numpy
 elif my_plat == 'Windows':
-    pass
+    from numpy_windows import numpy
 elif my_play == 'Darwin': #macOS
-    pass
+    from numpy_macos import numpy
 else:
     print(f'Your platform was detected as {my_plat} but we currently only support Linux/Windows/Darwin')
