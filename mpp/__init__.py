@@ -15,7 +15,8 @@ sys.path.insert(0,this_dir + f'/lib/{my_plat}')
 print(f'New path: {sys.path}')
 
 # platform-specific imports
-import numpy as np
+if my_plat not None:
+    import numpy as np
 
 # some simple numpy test code
 arr2d = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
