@@ -14,10 +14,13 @@ print(f'Platform detected: {my_plat}')
 sys.path.insert(0,this_dir + f'/lib/{my_plat}')
 print(f'New path: {sys.path}')
 
+# how about a pure python lib?
+import flask
+
 # platform-specific imports
-from mpp.lib.Linux import numpy as np
+# import numpy as np
 
 # some simple numpy test code
-arr2d = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
-print(arr2d)
-print(arr2d[0, 1])
+# arr2d = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+# print(arr2d)
+# print(arr2d[0, 1])
