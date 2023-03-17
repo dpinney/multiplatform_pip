@@ -3,7 +3,7 @@ on: push
 jobs:
   Ubuntu:
     name: Ubuntu Tests
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: Install
         run: python3 -m pip install setuptools; python3 -m pip install "https://github.com/dpinney/multiplatform_pip/archive/refs/heads/main.zip"
