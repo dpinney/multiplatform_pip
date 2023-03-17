@@ -1,12 +1,10 @@
-from setuptools import setup, find_packages
+from distutils.core import setup
 
 setup(
     name='mpp',
-    version='1.0.0',
-    url='https://github.com/dpinney/multiplatform_pip',
+    version='1.0',
+    description='Python Distribution Utilities',
     author='David Pinney',
     author_email='none@none.com',
-    description='Example of a python package with multiplatform statically linked libraries.',
-    packages=find_packages(),    
-    install_requires=[],
-)
+    url='https://github.com/dpinney/multiplatform_pip/',
+    packages=['mpp'])
