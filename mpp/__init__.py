@@ -10,7 +10,9 @@ my_plat = platform.system()
 sys.path.insert(0,this_dir + '/lib/')
 if my_plat not in ['Linux', 'Windows', 'Darwin']:
     print(f'Your platform was detected as {my_plat} but we currently only support Linux/Windows/Darwin')
+print(f'Platform detected: {my_plat}')
 sys.path.insert(0,this_dir + f'/lib/{my_plat}')
+print(f'New path: {sys.path}')
 
 # platform-specific imports
 import numpy as np
