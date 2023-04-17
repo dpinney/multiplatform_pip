@@ -3,7 +3,7 @@ import os as _os, sys as _sys, platform as _platform
 # setup environment
 this_dir = _os.path.dirname(__file__)
 py_bin = _sys.executable
-sys.path.insert(0,this_dir + '/lib/')
+_sys.path.insert(0,this_dir + '/lib/')
 
 try:
     import numpy as np
