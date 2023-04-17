@@ -8,7 +8,7 @@ _sys.path.insert(0, this_dir + '/lib/')
 # platform-specific imports
 try:
     import numpy as np
-except:
+except Exception:
     print('mpp: requirements missing. performing first time setup.')
     install_string = f'{py_bin} -m pip install --target="{this_dir}/lib/" numpy'
     _os.system(install_string)
