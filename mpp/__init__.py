@@ -8,6 +8,7 @@ except:
     print('mpp: requirements missing. performing first time setup.')
     install_string = f'{py_bin } -m pip install --target="{this_dir}/lib/" numpy'
     _os.system(install_string)
+    from mpp.lib import numpy as np
 
 # old approach please ignore.
 # this_dir = os.path.dirname(__file__)
