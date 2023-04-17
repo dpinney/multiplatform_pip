@@ -3,18 +3,17 @@ import os as _os, sys as _sys, platform as _platform
 # setup environment
 this_dir = _os.path.dirname(__file__)
 py_bin = _sys.executable
-_sys.path.insert(0,this_dir + '/lib/')
+_sys.path.insert(0, this_dir + '/lib/')
 
 try:
     import numpy as np
 except:
     print('mpp: requirements missing. performing first time setup.')
-    install_string = f'{py_bin } -m pip install --target="{this_dir}/lib/" numpy'
+    install_string = f'{py_bin} -m pip install --target="{this_dir}/lib/" numpy'
     _os.system(install_string)
     import numpy as np
 
-# TODO: think about pure python approach.
-# how about a pure python lib?
+# TODO: think about approach for pure python... just bundle directly?
 # import flask
 
 # some simple numpy test code
