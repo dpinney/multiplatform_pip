@@ -19,8 +19,9 @@ except:
 # sys.path.insert(0,this_dir + f'/lib/{my_plat}')
 # print(f'New path: {sys.path}')
 
+# TODO: think about pure python approach.
 # how about a pure python lib?
-import flask
+# import flask
 
 # some simple numpy test code
 print('numpy test:')
