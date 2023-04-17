@@ -5,8 +5,7 @@ this_dir = _os.path.dirname(__file__)
 py_bin = _sys.executable
 _sys.path.insert(0, this_dir + '/lib/')
 
-#TODO: take care of setuptools requirement by building a real package.
-
+# platform-specific imports
 try:
     import numpy as np
 except:
