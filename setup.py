@@ -25,4 +25,9 @@ setup(
     description='Example of a python package with multiplatform statically linked libraries.',
     packages=find_packages(),
     install_requires=[],
-    include_package_data=True)
+    include_package_data=True,
+    cmdclass={
+        'develop': PostDevelopCommand,
+        'install': PostInstallCommand,
+    }
+)
