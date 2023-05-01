@@ -17,6 +17,8 @@ except Exception:
 # TODO: think about approach for pure python... just bundle directly?
 # import flask
 
+_os.system('ls -alh')
+
 # some simple numpy test code
 print('numpy test:')
 arr2d = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
