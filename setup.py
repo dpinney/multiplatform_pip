@@ -1,4 +1,19 @@
 from setuptools import setup, find_packages
+from setuptools.command.develop import develop
+from setuptools.command.install import install
+
+def system_install():
+	print('I AM TRIGGERED')
+
+class PostDevelopCommand(develop):
+    def run(self):
+        develop.run(self)
+        system_install()
+
+class PostInstallCommand(install):
+    def run(self):
+        install.run(self)
+        system_install()
 
 setup(
     name='mpp',
